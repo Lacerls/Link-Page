@@ -7,29 +7,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/script.js"></script>
     <title>Social Links</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <img src="./images/eu.jpg" alt="foto na praia">
-            <h3 class="orroba branco">@Lacerls</h3>
+            <p class="arroba branco">@Lacerls</p>
             <p class="cinza"><small>ipsum dolor, sit amet consectetur adipisicing elit. Veniam enim pariatur minus? Totam optio qui sapiente</small></p>
         </div>
         <div class="list">
-            <a href="">
-                <button class="branco instagram links">Instagram</button>
-            </a>
-
-            <a href="">
-                <button class="branco facebook links">Facebook</button>
-            </a>
-
-            <a href="https://github.com/Lacerls">
-                <button  class="branco github links">Github</button>
-            </a>
             
+            <ul class="social-list">
+                <li>
+                    <button class="branco instagram links" onclick="instagram()" >Instagram</button>
+                </li>
+                <li>
+                    <button class="branco facebook links" onclick="facebook()">Facebook</button>
+                </li>
+                <li>
+                    <button class="branco github links" onclick="github()">Github</button>
+                </li>
+            </ul>
         </div>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
