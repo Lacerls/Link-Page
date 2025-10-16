@@ -2,16 +2,19 @@ html{
     font-family: 'Sora', sans-serif;
 }
 
-body{
-    background: #EEAECA;
-    background: radial-gradient(circle,rgba(238, 174, 202, 1) 50%, rgba(148, 187, 233, 1) 100%);
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 50%, rgba(148, 187, 233, 1) 100%);
 }
 
 .container{
-    max-width: 60%;
+    width: 60%;
     display: flex;
-    background: #7a6d71;
-    background: linear-gradient(160deg,rgba(122, 109, 113, 1) 10%, rgba(10, 40, 71, 1) 100%);
+    background: linear-gradient(170deg,rgba(122, 109, 113, 1) 10%, rgba(10, 40, 71, 1) 100%);
     justify-self: center;
     justify-content: center;
     flex-direction: column;
@@ -25,7 +28,8 @@ body{
     color:gray;
 }
 
-.orroba{
+.arroba{
+    font-size: 30px;
     margin-top: 0px;
     margin: 0 1%;
 }
@@ -34,7 +38,7 @@ body{
 img{
     padding: 5px;
     margin: 20px 0 0 0px;
-    max-width: 30%;
+    width: 30%;
     border-radius: 50%;
 }
 
@@ -62,6 +66,19 @@ img{
     background: linear-gradient(to right at 30, #373535 0%, #5b5959 5%, #817f7f 5%,#a9a8a8 60%,#d3d3d3 90%);
 }
 
+.social-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-list li{
+    margin-bottom: 0.5vw;
+}
+
+li{
+    list-style-type: none;
+}
 
 button.links{
     margin: 0 0 0.5vw;
@@ -74,4 +91,52 @@ button{
     border-radius: 999px;
     padding: 2vh 10vw;
     font-size: medium;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .arroba{
+        
+        text-align: center;
+        width: 100%;
+        align-content: center ;
+        font-size: medium;
+
+    }
+
+    img {
+        margin: auto;
+        width: 40vw;
+        margin: 20px auto 0 auto;
+        display: block;
+    }
+
+    .list {
+        padding: 2vw;
+    }
+
+    button {
+        padding: 2vh 5vw;
+        font-size: 1rem;
+    }
+    
+    .header{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
