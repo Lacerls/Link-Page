@@ -1,9 +1,9 @@
 function github() {
-    window.open = "https://github.com/Lacerls", '_blank';
+    window.location.href = "https://github.com/Lacerls";
 }
 
-function github() {
-    window.location.href = "https://github.com/Lacerls";
+function linkedin() {
+    window.location.href = "https://www.linkedin.com/in/leonardo-silva-lacerda/";
 }
 
 function instagram() {
