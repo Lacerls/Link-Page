@@ -1,5 +1,5 @@
 function github() {
-    window.location.href = "https://github.com/Lacerls";
+    window.open = "https://github.com/Lacerls", '_blank';
 }
 
 function github() {
